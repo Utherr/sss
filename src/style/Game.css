@@ -1,0 +1,13 @@
+.game {
+    height: 88%;
+}
+
+.tmp1{
+    background: rgba(0, 0, 0, .7);
+    height: 100%;
+  }
+  
+  .tmp2{
+    background: rgba(0, 0, 0, .3);
+    height: 100%;
+  }
