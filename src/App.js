@@ -9,7 +9,7 @@ class App extends Component {
 
   constructor() {
     super();
-    this.state = { play: false };
+    this.state = { welcomeToGame: true };
   }
 
   render() {
@@ -21,37 +21,16 @@ class App extends Component {
     );
   }
 
-  graj() {
+  startGame = (welcomeToGame) => {
     this.setState({
-      play: true
-    })
-  }
-
-  nieGraj() {
-    this.setState({
-      play: false
-    })
+      welcomeToGame
+    });
   }
 
   renderGame() {
-    if(this.state.play)
-    {
-      return (
-        <div className="game">
-          <button className="button btn btn-secondary px-5" onClick={ this.nieGraj.bind(this) }>Exit</button>
-          <Game value="xd" />
-        </div>
-      );
-    }
-    else
-    {
-      return (
-        <div>
-          <Welcome />
-          <button className="button2 btn btn-primary mt-5 px-5" onClick={ this.graj.bind(this) }>Play</button>
-        </div>
-      );
-    }
+    if(this.state.welcomeToGame)
+      return <Welcome playGame={ this.startGame } />
+    return <Game playGame={ this.startGame } />
       
   }
 }

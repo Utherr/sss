@@ -3,11 +3,21 @@
 }
 
 .tmp1{
-    background: rgba(0, 0, 0, .7);
-    height: 100%;
-  }
-  
-  .tmp2{
     background: rgba(0, 0, 0, .3);
     height: 100%;
-  }
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tmp2 {
+    background: rgba(0, 0, 0, .5);
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.logoutButton {
+    position: fixed;
+    right: 1%;
+    top: 13%;
+}
