@@ -9,7 +9,11 @@ export default class Welcome extends React.Component {
         return(
             <div className="welcome">
                 <p className="pt-5">Sign up/in, welcome panel</p>
-                <button onClick={ playGame.bind(this, false) }>Play</button>
+                <button
+                    onClick={ playGame.bind(this, false) }
+                    className="btn btn-primary"
+                >Play
+                </button>
             </div>
         );
     }
