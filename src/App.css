@@ -1,5 +1,14 @@
+/* Main */
+
 html, body {
   height: 100%;
+  overflow: hidden;
+  cursor: default;
+  user-select: none;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
 #root {
@@ -14,25 +23,32 @@ html, body {
   color: white;
 }
 
-.button {
-  position: fixed;
-  bottom: 0%;
-  right: 0%;
+/* Banner */
+
+.banner {
+  background: rgba(0, 80, 255, .2);
+  border-bottom-left-radius: 5vmax;
+  border-bottom: solid 2px rgba(0, 120, 255, .5);
+  height: 10%;
 }
 
-.button2 {
-  font-size: 72px;
-  position: fixed;
-  left: 42%;
+.bluer {
+  color: rgb(0, 170, 255);
 }
+
+/* Footer */
 
 .footer {
   width: 100%;
-  background: rgba(0, 0, 0, .6);
+  background: #111;
   color: rgba(255, 255, 255, .8);
   font-size: 16px;
-  text-align: left;
-  padding-left: 20px;
   position: fixed;
   bottom: 0px;
+  height: 5%;
+  display: flex;
+}
+
+.footerTxt{
+  margin: auto;
 }

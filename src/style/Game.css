@@ -1,25 +1,22 @@
+/* Game */
+
 .game {
-    height: 84%;
-}
-
-.tmp1{
-    background: rgba(0, 0, 0, .3);
-    height: 100%;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.tmp2 {
-    background: rgba(0, 0, 0, .5);
-    height: 100%;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+    height: 85%;
 }
 
 .logoutButton {
     position: fixed;
     right: 1%;
     top: 13%;
+}
+
+/* GameNavi */
+
+.gamenavi {
+    background: rgba(0, 0, 0, .5);
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .list-group-item {
@@ -32,14 +29,17 @@
     background: rgba(0, 120, 255, .2);
 }
 
+/* GameWindow */
+
+.gamewindow {
+    background: rgba(0, 0, 0, .3);
+    height: 100%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Player */
+
 .avatar {
     border: 2px solid #000;
-}
-
-.stats1 {
-    text-align: right;
-}
-
-.stats2 {
-    text-align: left;
 }

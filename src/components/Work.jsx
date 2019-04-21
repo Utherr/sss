@@ -1,9 +1,11 @@
 import React from 'react';
 
-export default class Work extends React.Component {
-    render() {
-        return(
-            <p>I am a Work</p>
-        );
-    }
+/*
+    Test field
+*/
+
+export default function Work() {
+    return(
+        <p>You aren't working!</p>
+    );
 }

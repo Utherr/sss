@@ -1,14 +1,13 @@
 import React from 'react';
 
-export default class GameWindow extends React.Component {
+/*
+    Just a game content window
+*/
 
-    render() {
-
-        return (
-            <div className="col-9 h-100 tmp1 pt-5">
-                { this.props.already }
-            </div>
-        );
-    }
-
+export default function GameWindow({ already }) {
+    return (
+        <div className="gamewindow col-9 h-100 pt-5">
+            { already }
+        </div>
+    );
 }

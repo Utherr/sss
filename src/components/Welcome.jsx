@@ -1,20 +1,18 @@
 import React from 'react';
 
-import './../style/Welcome.css';
+/*
+    Welcome screen, where we can sign in/up to play the game
+*/
 
-export default class Welcome extends React.Component {
-
-    render() {
-        const { playGame } = this.props;
-        return(
-            <div className="welcome">
-                <p className="pt-5">Sign up/in, welcome panel</p>
-                <button
-                    onClick={ playGame.bind(this, false) }
-                    className="btn btn-primary"
-                >Play
-                </button>
-            </div>
-        );
-    }
+export default function Welcome({ playGame }) {
+    return(
+        <div className="welcome">
+            <p className="pt-5">Sign up/in, welcome panel</p>
+            <button
+                onClick={ playGame.bind(this, false) }
+                className="btn btn-primary"
+            >Play
+            </button>
+        </div>
+    );
 }
