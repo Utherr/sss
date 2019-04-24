@@ -21,7 +21,7 @@ export default function Player() {
                 <p>Username</p>
             </div>
             <div className="col-md-8">
-                <p className="h2 stats1 pr-5">Money: 20$</p>
+                <p className="h2 stats1 pr-0 pr-md-5 text-md-right">Money: 20$</p>
                 <hr />
                 <Stats />
             </div>

@@ -4,7 +4,7 @@ import Welcome from './components/Welcome.jsx';
 import Game from './components/Game.jsx';
 import Footer from './components/Footer.jsx';
 import './App.css';
-
+import './style/Mobile.css';
 /*
   Main class, where we can switch view between welcome/game screen
 */
@@ -24,13 +24,13 @@ export default class App extends React.Component {
   renderGame() {
     if(this.state.welcomeToGame)
       return <Welcome playGame={ this.startGame } />
-    return <Game playGame={ this.startGame } />
+    return <Game />
   }
 
   render() {
     return (
       <div className="App">
-        <Banner />
+        <Banner playGame={ this.startGame } x={this.state.welcomeToGame}/>
         { this.renderGame() }
         <Footer />
       </div>

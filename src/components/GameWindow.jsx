@@ -6,7 +6,7 @@ import React from 'react';
 
 export default function GameWindow({ already }) {
     return (
-        <div className="gamewindow col-9 h-100 pt-5">
+        <div className="gamewindow col-md-9 h-100 pt-5">
             { already }
         </div>
     );
